@@ -1,104 +1,272 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conheça o Sabor da Casa: hambúrgueres artesanais preparados com ingredientes selecionados."
+    />
+    <title>Bino's Burguer | Hambúrgueres Artesanais</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sabor da Casa</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <header class="cabecalho">
+      <div class="container topo">
+        <a href="#inicio" class="logo">Bino's Burguer<span>.</span></a>
 
-    <header>
-
-        <h1>Sabor da Casa</h1>
-
-        <p>Hambúrguer artesanal de verdade.</p>
-
-    <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#cardapio">Cardápio</a>
-    <a href="#pedido">Pedidos</a>
-    </nav> <br><br>
-
-         <img
-            src="img/hamburguer.jpg"
-            alt="Hambúrguer artesanal"
-            class="imagem-principal">
-
+        <nav class="navegacao" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#cardapio">Cardápio</a>
+          <a href="#pedido">Pedidos</a>
+        </nav>
+      </div>
     </header>
 
-
     <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-conteudo">
+          <div class="hero-texto">
+            <p class="etiqueta">FEITO COM SABOR E QUALIDADE</p>
 
-        <section id="sobre">
+            <h1>Seu próximo hambúrguer favorito está aqui.</h1>
 
-            <h2>Sobre nós</h2>
-
-            <p>
-                Hambúrgueres artesanais preparados
-                com ingredientes selecionados.
+            <p class="descricao-hero">
+              Hambúrgueres artesanais, ingredientes selecionados e muito sabor
+              em cada mordida.
             </p>
 
-        </section>
+            <div class="hero-acoes">
+              <a href="#cardapio" class="botao"> Conheça o cardápio </a>
 
+              <a href="#sobre" class="link-secundario">
+                Conheça nossa história
+              </a>
+            </div>
+          </div>
 
-<section class="cardapio" id="cardapio">
-    <h2>Nosso cardápio</h2>
+          <div class="hero-imagem">
+            <img
+              src="img/hamburguer.jpg"
+              alt="Hambúrguer artesanal preparado pela Sabor da Casa"
+            />
+          </div>
+        </div>
+      </section>
 
-    <div class="produtos">
-        <article class="produto">
-            <h3>X-Bacon</h3>
-            <p>Hambúrguer artesanal com bacon crocante.</p>
-            <strong>R$ 25,00</strong>
-        </article>
+      <section class="sobre secao" id="sobre">
+        <div class="container">
+          <p class="etiqueta">NOSSA ESSÊNCIA</p>
 
-        <article class="produto">
-            <h3>X-Salada</h3>
-            <p>Hambúrguer com queijo, alface e tomate.</p>
-            <strong>R$ 22,00</strong>
-        </article>
+          <h2>Sabor que transforma cada momento.</h2>
 
-        <article class="produto">
-            <h3>Duplo Sabor</h3>
-            <p>Dois hambúrgueres para matar a fome.</p>
-            <strong>R$ 30,00</strong>
-        </article>
+          <p>
+            No Bino's Burguer, acreditamos que um bom hambúrguer vai além da
+            fome. Por isso, valorizamos ingredientes selecionados, combinações
+            saborosas e o cuidado em cada detalhe.
+          </p>
+        </div>
+      </section>
 
-        <article class="produto">
-            <h3>Batata Frita</h3>
-            <p>Porção de batatas crocantes.</p>
-            <strong>R$ 12,00</strong>
-        </article>
-    </div>
-</section>
+      <section class="cardapio secao" id="cardapio">
+        <div class="container">
+          <p class="etiqueta">ESCOLHA O SEU FAVORITO</p>
 
+          <h2>Nosso cardápio</h2>
 
-        <section id="pedido">
+          <p class="introducao-cardapio">
+            Opções preparadas para deixar seu dia mais gostoso.
+          </p>
 
-            <h2>Faça seu pedido</h2>
+          <div class="produtos">
+            <article class="produto">
+              <div class="produto-imagem">
+                <img
+                  src="img/hamburguer.jpg"
+                  alt="Hambúrguer com bacon crocante"
+                  loading="lazy"
+                />
+              </div>
 
+              <div class="produto-conteudo">
+                <h3>X-Bacon</h3>
+                <p>Hambúrguer artesanal com queijo e bacon crocante.</p>
+                <strong>R$ 25,00</strong>
+                <button
+                  class="botao botao-produto"
+                  type="button"
+                  data-adicionar
+                  data-nome="X-Bacon"
+                  data-preco="25"
+                >
+                  Adicionar ao pedido
+                </button>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto-imagem">
+                <img
+                  src="img/x-salada.jpg"
+                  alt="Hambúrguer com queijo, alface e tomate"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="produto-conteudo">
+                <h3>X-Salada</h3>
+                <p>Hambúrguer com queijo, alface fresca e tomate.</p>
+                <strong>R$ 22,00</strong>
+                <button
+                  class="botao botao-produto"
+                  type="button"
+                  data-adicionar
+                  data-nome="X-Salada"
+                  data-preco="22"
+                >
+                  Adicionar ao pedido
+                </button>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto-imagem">
+                <img
+                  src="img/duplo-sabor.jpg"
+                  alt="Hambúrguer duplo artesanal"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="produto-conteudo">
+                <h3>Duplo Sabor</h3>
+                <p>Dois hambúrgueres para quem gosta de muito sabor.</p>
+                <strong>R$ 30,00</strong>
+                <button
+                  class="botao botao-produto"
+                  type="button"
+                  data-adicionar
+                  data-nome="Duplo Sabor"
+                  data-preco="30"
+                >
+                  Adicionar ao pedido
+                </button>
+              </div>
+            </article>
+
+            <article class="produto">
+              <div class="produto-imagem">
+                <img
+                  src="img/batata.jpg"
+                  alt="Porção de batatas fritas crocantes"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="produto-conteudo">
+                <h3>Batata Frita</h3>
+                <p>Porção de batatas douradas e crocantes.</p>
+                <strong>R$ 12,00</strong>
+                <button
+                  class="botao botao-produto"
+                  type="button"
+                  data-adicionar
+                  data-nome="Batata Frita"
+                  data-preco="12"
+                >
+                  Adicionar ao pedido
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="carrinho secao" id="carrinho">
+        <div class="container">
+          <p class="etiqueta">SEU PEDIDO</p>
+          <h2>Meu carrinho</h2>
+          <p id="contador-carrinho">0 itens no carrinho</p>
+          <p>Confira os produtos antes de finalizar.</p>
+
+          <div id="itens-carrinho">
+            <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+          </div>
+
+          <div class="dados-pedido">
+            <label for="nome-cliente">Seu nome *</label>
+            <input
+              type="text"
+              id="nome-cliente"
+              placeholder="Digite seu nome"
+              maxlength="80"
+              autocomplete="name"
+              required
+            />
+
+            <label for="observacoes">Observações (opcional)</label>
+            <textarea
+              id="observacoes"
+              rows="3"
+              maxlength="300"
+              placeholder="Ex.: sem cebola, retirar algum ingrediente..."
+            ></textarea>
+
+            <p id="erro-pedido" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="resumo-carrinho">
             <p>
-                Entre em contato pelo WhatsApp.
+              Total do pedido:
+              <strong id="total-carrinho">R$ 0,00</strong>
             </p>
 
-            <a  class="botao"
-                href="https://wa.me/55000000000?text=Olá!%20Quero%20fazer%20um%20pedido."
-                target="_blank"
-                rel="noopener noreferrer">Pedir agora</a>
+            <button class="botao" type="button" id="limpar-carrinho">
+              Limpar carrinho
+            </button>
 
-        </section>
+            <button class="botao" type="button" id="finalizar-pedido" disabled>
+              Finalizar pelo WhatsApp
+            </button>
+          </div>
+        </div>
+      </section>
 
+      <section class="pedido secao" id="pedido">
+        <div class="container pedido-conteudo">
+          <p class="etiqueta">BATEU A FOME?</p>
+
+          <h2>Seu próximo pedido começa aqui.</h2>
+
+          <p>
+            Escolha seus favoritos e entre em contato para fazer seu pedido pelo
+            WhatsApp.
+          </p>
+
+          <a
+            class="botao"
+            href="https://wa.me/55000000000?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fazer meu pedido
+          </a>
+        </div>
+      </section>
     </main>
 
-
-    <footer>
-
-        <p>Sabor da Casa © 2026</p>
-
+    <footer class="rodape">
+      <div class="container">
+        <a href="#inicio" class="logo">Bino's Burguer<span>.</span></a>
+        <p>Feito com carinho para quem ama hambúrguer.</p>
+        <p class="copyright">
+          Bino's Burguer © 2026. Todos os direitos reservados.
+        </p>
+      </div>
     </footer>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
